@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:padding="20dp"
+    android:background="@drawable/bg4"
+    tools:context="com.example.forever.tour.ActivityInternal.ActivityAddExpense">
+
+    <RelativeLayout
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/showExpCudTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text=""
+            android:layout_centerHorizontal="true"
+            android:textColor="#000"
+            />
+
+
+        <!-- ICON -->
+        <ImageView
+            android:padding="3dp"
+            android:id="@+id/expDetailsIcon"
+            android:src="@drawable/expense"
+            android:layout_below="@+id/showExpCudTime"
+            android:layout_width="45dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="45dp"
+            android:scaleType="fitXY"/>
+
+        <EditText
+            android:id="@+id/expDetails"
+            android:layout_marginLeft="-45dp"
+            android:layout_toRightOf="@+id/expDetailsIcon"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:hint="Expense Details"
+            android:layout_below="@+id/showExpCudTime"
+            android:padding="15dp"
+            android:paddingStart="46dp"
+            android:maxLines="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:id="@+id/budujetIcon"
+            android:src="@drawable/taka"
+            android:layout_width="40dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/expDetails"
+            android:scaleType="fitXY"/>
+
+        <EditText
+            android:id="@+id/expAmt"
+            android:layout_marginLeft="-43dp"
+            android:layout_toRightOf="@+id/budujetIcon"
+            android:inputType="number"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"
+            android:hint="Expense Amount"
+            android:layout_below="@id/expDetails"
+            android:maxLines="1"
+            android:padding="15dp"
+            android:paddingStart="47dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="47dp" />
+
+
+
+        <Button
+            android:layout_marginTop="25dp"
+            android:id="@+id/btnAddExpense"
+            android:layout_below="@id/expAmt"
+            style="@style/btnlogin"
+            android:text="Add Expense"
+            android:textAllCaps="false"
+            android:onClick="addExpense"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

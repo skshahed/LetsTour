@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/inMenuHome"
+        android:title="Home"
+        android:orderInCategory="1"
+        app:showAsAction="never">
+    </item>
+
+    <item
+        android:id="@+id/apiServices"
+        android:title="Services"
+        android:orderInCategory="2"
+        app:showAsAction="never">
+    </item>
+
+    <item
+        android:id="@+id/inAddEvent"
+        android:title="Add Event"
+        android:orderInCategory="2"
+        app:showAsAction="never">
+    </item>
+
+
+
+    <item
+        android:id="@+id/inViewTravelEvent"
+        android:title="View Event"
+        android:orderInCategory="5"
+        app:showAsAction="never">
+    </item>
+
+
+
+    <item
+        android:id="@+id/inLogOut"
+        android:title="Log Out"
+        android:orderInCategory="8"
+        app:showAsAction="never">
+    </item>
+</menu>

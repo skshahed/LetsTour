@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/expenseDateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Expense Date Time"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:paddingBottom="2dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif"
+        />
+
+    <TextView
+        android:id="@+id/expenseDetalis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="expense Detalis"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:paddingRight="120dp"
+        android:layout_below="@id/expenseDateTime"
+        android:fontFamily="sans-serif"
+        />
+
+    <TextView
+        android:id="@+id/expenseAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Tk. 00000.00"
+        android:textColor="#f55252"
+        android:textSize="20sp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/expenseDateTime"
+        android:fontFamily="sans-serif"
+        android:layout_marginBottom="3dp"
+        />
+
+    <ImageView
+        android:id="@+id/dateIcon1"
+        android:layout_width="25dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/expenseAmount"
+        android:layout_centerInParent="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/arrowright" />
+
+
+
+
+</RelativeLayout>

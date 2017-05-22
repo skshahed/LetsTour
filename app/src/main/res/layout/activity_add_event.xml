@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg4"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.example.forever.tour.ActivityInternal.ActivityAddEvent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <!-- ICON -->
+        <ImageView
+            android:id="@+id/destination_icon"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:padding="3dp"
+            android:scaleType="fitXY"
+            android:focusable="true"
+            android:src="@drawable/destination" />
+
+        <EditText
+            android:id="@+id/travelDestination"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-40dp"
+            android:layout_toRightOf="@+id/destination_icon"
+            android:hint="Travel Destination"
+            android:focusable="true"
+            android:padding="15dp"
+            android:paddingStart="41dp"
+            android:textSize="20sp" />
+
+
+        <ImageView
+            android:id="@+id/budujetIcon"
+            android:layout_width="40dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/travelDestination"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/taka" />
+
+        <EditText
+            android:id="@+id/estimateBudjet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/travelDestination"
+            android:layout_marginLeft="-43dp"
+            android:inputType="number"
+            android:layout_marginTop="5dp"
+            android:hint="Estimate Budget"
+            android:padding="15dp"
+            android:paddingStart="90dp"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/dateIcon1"
+            android:layout_width="35dp"
+            android:layout_height="43dp"
+            android:layout_below="@id/estimateBudjet"
+            android:layout_marginTop="15dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/dateicon" />
+
+
+        <Button
+            android:id="@+id/fromDate"
+            style="@style/btndate"
+            android:layout_below="@id/estimateBudjet"
+            android:layout_toRightOf="@id/dateIcon1"
+            android:hint="Set Event Start Date"
+            android:onClick="showFromDate"
+            android:focusable="true"
+            android:clickable="true"
+            android:focusableInTouchMode="true"
+            android:textAllCaps="false"
+            android:textColor="#fff" />
+
+
+        <ImageView
+            android:id="@+id/dateIcon2"
+            android:layout_width="35dp"
+            android:layout_height="43dp"
+            android:layout_below="@id/fromDate"
+            android:layout_marginTop="15dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/dateicon" />
+
+
+        <Button
+            android:id="@+id/toDate"
+            style="@style/btndate"
+            android:layout_below="@id/fromDate"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/dateIcon2"
+            android:hint="Set Event Ending Date"
+            android:focusable="true"
+            android:clickable="true"
+            android:focusableInTouchMode="true"
+            android:onClick="showToDate"
+            android:textAllCaps="false"
+            android:textColor="#fff" />
+
+
+        <Button
+            android:id="@+id/btnAddEvent"
+            style="@style/btnlogin"
+            android:layout_below="@id/toDate"
+            android:layout_marginTop="25dp"
+            android:onClick="addEvent"
+            android:focusable="true"
+            android:clickable="true"
+            android:focusableInTouchMode="true"
+            android:text="Add Event"
+            android:textAllCaps="false" />
+    </RelativeLayout>
+
+</LinearLayout>

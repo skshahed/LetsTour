@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+	
+	<Button
+        android:id="@+id/details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="#91b649"
+        android:textColor="#fff"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:text="Details"/>
+		
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="#cf2727"
+        android:textColor="#fff"
+        android:layout_marginBottom="3dp"
+        android:text="Delete"/>
+    <Button
+        android:id="@+id/update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="#91b649"
+        android:textColor="#fff"
+        android:layout_marginBottom="3dp"
+        android:text="Update"/>
+    <Button
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="#cf9727"
+        android:textColor="#fff"
+        android:layout_marginBottom="3dp"
+        android:text="Cancel"/>
+
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/bg4"
+    android:padding="20dp"
+    tools:context="com.example.forever.tour.ActivityInternal.ActivityAddMoment">
+
+    <TextView
+        android:id="@+id/showImagepath"
+        android:visibility="invisible"
+        android:maxLines="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/momentShowdTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000"
+        />
+
+
+
+    <RelativeLayout
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <!-- ICON -->
+
+        <ImageView
+            android:padding="3dp"
+            android:id="@+id/ivImage"
+            android:src="@drawable/camera"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitXY"/>
+
+        <Button
+            android:id="@+id/btnSelectPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivImage"
+            android:text="Select Photo" />
+
+
+        <ImageView
+            android:padding="3dp"
+            android:id="@+id/destination_icon"
+            android:src="@drawable/diary"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/btnSelectPhoto"
+            android:scaleType="fitXY"/>
+
+        <EditText
+            android:id="@+id/momentDetails"
+            android:layout_marginLeft="-45dp"
+            android:layout_toRightOf="@+id/destination_icon"
+            android:layout_below="@+id/btnSelectPhoto"
+            android:textSize="20sp"
+            android:hint="Moment Details"
+            android:padding="15dp"
+            android:paddingStart="46dp"
+            android:paddingLeft="46dp"
+            android:maxLines="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <Button
+            android:layout_marginTop="25dp"
+            android:id="@+id/addMomentBtn"
+            android:layout_below="@id/momentDetails"
+            style="@style/btnlogin"
+            android:text="Save Moment"
+            android:textAllCaps="false"
+            android:onClick="saveMoment"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

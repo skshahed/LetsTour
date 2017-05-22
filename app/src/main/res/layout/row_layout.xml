@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/shoowUserImage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/image_background"
+
+        android:scaleType="fitXY"
+        android:src="@drawable/user"/>
+
+    <TextView
+        android:id="@+id/fullName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Full  Name"
+        android:textColor="#c41ba7"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"/>
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="user Name"
+        android:textColor="#111976"
+        android:textSize="17sp"
+        android:layout_below="@id/fullName"
+        android:fontFamily="sans-serif"
+        android:textStyle="normal"
+        />
+
+    <TextView
+        android:id="@+id/contactNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textColor="#111976"
+        android:textSize="17sp"
+        android:layout_below="@id/userName"
+        android:fontFamily="sans-serif"
+        android:textStyle="normal"
+        />
+
+    <Button
+        android:id="@+id/changeUserBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/button_background"
+        android:scaleType="fitXY"
+        android:textAllCaps="false"
+        android:text="Change" />
+
+</LinearLayout>

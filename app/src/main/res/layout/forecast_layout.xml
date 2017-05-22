@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+
+    <TextView
+        android:id="@+id/forecastDayName"
+        android:gravity="center_vertical"
+        android:layout_weight="1.6"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:textSize="18sp"
+        android:text="24-04-2017"
+        android:textColor="#000"
+        />
+
+    <TextView
+        android:id="@+id/forecastDayHighTemp"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:textSize="18sp"
+        android:text="80"
+        android:textColor="#000"
+        />
+    <TextView
+        android:id="@+id/forecastDayLowTemp"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:textSize="18sp"
+        android:layout_height="match_parent"
+        android:text="55"
+        android:textColor="#000"
+        />
+    <com.github.pwittchen.weathericonview.WeatherIconView
+        android:id="@+id/forecastIcon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.6"
+        android:layout_marginRight="10dp"
+        app:weatherIconColor="#1ec64b"
+        app:weatherIconSize="35"/>
+ <!--   <ImageView
+        android:id="@+id/forecastIcon"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:src="@drawable/weather_demo"
+        />-->
+</LinearLayout>

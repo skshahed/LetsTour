@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+
+
+    <TextView
+        android:id="@+id/destination"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Place Name"
+        android:layout_centerHorizontal="true"
+        android:textColor="#763535"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        />
+
+    <TextView
+        android:id="@+id/fromDateTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="From Date"
+        android:layout_below="@+id/destination"
+        android:textColor="#1e3e3d"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"/>
+
+    <TextView
+        android:id="@+id/fromDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="From Date"
+        android:textColor="#c48105"
+        android:textSize="17sp"
+        android:layout_below="@id/fromDateTitle"
+        android:fontFamily="sans-serif"/>
+
+
+    <TextView
+        android:id="@+id/toDateTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To Date"
+        android:textColor="#1e3e3d"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif"
+        android:layout_below="@+id/destination"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        />
+
+    <TextView
+        android:id="@+id/toDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To Date"
+        android:textColor="#c48105"
+        android:textSize="17sp"
+        android:layout_below="@id/toDateTitle"
+        android:layout_alignParentRight="true"
+        android:fontFamily="sans-serif"/>
+
+
+
+    <ImageView
+        android:id="@+id/dateIcon1"
+        android:layout_width="25dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/toDate"
+        android:layout_centerInParent="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/arrowright" />
+
+
+
+</RelativeLayout>

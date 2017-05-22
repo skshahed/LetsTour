@@ -1,0 +1,102 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <fragment
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        tools:context="com.example.forever.tour.GoogleNearby.NearbyMapFragment" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnRestaurant"
+                android:layout_width="0dp"
+                android:background="#9985DB18"
+                android:textStyle="italic"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="3dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="#0a0e7c"
+                android:text="Restaurants"
+                />
+
+            <Button
+                android:id="@+id/btnCafe"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:background="#9985DB18"
+                android:layout_marginTop="5dp"
+                android:textStyle="italic"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="#1a1e96"
+                android:text="Cafes"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnBank"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:background="#9985DB18"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="3dp"
+                android:textStyle="italic"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="#1a1e96"
+                android:text="Banks"
+                />
+            <Button
+                android:id="@+id/btnATM"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:background="#9985DB18"
+                android:layout_marginTop="5dp"
+                android:textStyle="italic"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="#1a1e96"
+                android:text="ATM Booths"
+                />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_lat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_lng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</FrameLayout>

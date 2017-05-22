@@ -1,0 +1,162 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/bg4"
+    tools:context="com.example.forever.tour.WeatherUpdate.ForecastFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/searchResult"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:drawableLeft="@drawable/search"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="4dp"
+            android:drawablePadding="7dp"
+            android:hint="Search By City"
+            android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/searchBtn"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:text="Search"
+            android:background="#9985DB18"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textColor="#1a1e96"
+            android:layout_weight="1"
+           />
+
+    </LinearLayout>
+
+
+
+    <RadioGroup
+        android:id="@+id/tempFormat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/tempCelsius"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="In Celsius"
+            />
+        <RadioButton
+            android:id="@+id/tempFahrenheit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="In Fahrenheit"
+            android:layout_weight="1"
+            />
+    </RadioGroup>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:background="#25e48b"
+        />
+
+    <TextView
+        android:id="@+id/weatherPlace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="#1a1e96"
+        android:text="Loading..."/>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:background="#25e48b"
+        />
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:layout_weight="1.8"
+            android:textColor="#1f1681"
+            android:textSize="18sp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Date"/>
+
+
+        <TextView
+            android:gravity="center"
+            android:layout_weight="0.8"
+            android:textColor="#1f1681"
+            android:textSize="18sp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Max"/>
+        <TextView
+            android:gravity="center"
+            android:textColor="#1f1681"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Min"/>
+        <TextView
+            android:gravity="center"
+            android:layout_weight="0.9"
+            android:textColor="#1f1681"
+            android:textSize="18sp"
+            android:layout_marginRight="8dp"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:text="Status"
+            />
+
+    </LinearLayout>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:background="#25e48b"
+        />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/weatherForecastLV"
+        android:dividerHeight="1dp"
+        android:divider="#111976">
+
+    </ListView>
+
+    <ProgressBar
+        android:id="@+id/dataProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center"
+        android:indeterminate="true" />
+
+</LinearLayout>

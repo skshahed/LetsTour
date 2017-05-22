@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg4"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+
+    tools:context="com.example.forever.tour.Activity.ActivitySignUP">
+
+    <TextView
+        android:id="@+id/showUserImagepath"
+        android:visibility="invisible"
+        android:maxLines="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/ivImage"
+        android:src="@drawable/camera"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:padding="2dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"/>
+
+
+    <Button
+        android:id="@+id/btnSelectPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Photo" />
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+
+
+
+        <!-- ICON -->
+        <ImageView
+            android:id="@+id/fullName_icon"
+            android:padding="3dp"
+            android:src="@drawable/name"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:scaleType="fitXY"/>
+
+        <EditText
+            android:id="@+id/personFullName"
+            android:layout_marginLeft="-40dp"
+            android:layout_toRightOf="@+id/fullName_icon"
+            android:textSize="20sp"
+            android:hint="Full Name"
+            android:maxLines="1"
+            android:padding="15dp"
+            android:paddingStart="41dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- ICON -->
+        <ImageView
+            android:padding="3dp"
+            android:id="@+id/username_icon"
+            android:src="@drawable/usericon"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/personFullName"
+            android:scaleType="fitXY"/>
+
+        <EditText
+            android:id="@+id/personUsername"
+            android:layout_marginLeft="-45dp"
+            android:paddingStart="44dp"
+            android:layout_toRightOf="@+id/username_icon"
+            android:layout_below="@id/personFullName"
+            android:textSize="20sp"
+            android:maxLines="1"
+            android:hint="Username"
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <ImageView
+            android:layout_marginTop="7dp"
+            android:id="@+id/pass_icon"
+            android:src="@drawable/pass"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/personUsername"
+            android:scaleType="fitXY"/>
+
+        <EditText
+            android:id="@+id/personPassword"
+            android:layout_marginLeft="-40dp"
+            android:paddingStart="44dp"
+            android:layout_marginTop="3dp"
+            android:textSize="20sp"
+            android:layout_below="@id/personUsername"
+            android:layout_toRightOf="@+id/pass_icon"
+            android:hint="Password"
+            android:maxLines="1"
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <ImageView
+            android:layout_marginTop="9dp"
+            android:id="@+id/phone_icon"
+            android:src="@drawable/phone"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/personPassword"
+            android:scaleType="fitXY"/>
+
+        <EditText
+            android:id="@+id/personPhoneNumber"
+            android:layout_marginLeft="-36dp"
+            android:paddingStart="41dp"
+            android:layout_marginTop="5dp"
+            android:inputType="number"
+            android:textSize="20sp"
+            android:layout_below="@id/personPassword"
+            android:layout_toRightOf="@+id/phone_icon"
+            android:hint="Contact number"
+            android:maxLines="1"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_below="@id/personPhoneNumber"
+            style="@style/btnlogin"
+            android:text="Sign Up"
+            android:onClick="btnSignUpProcess"
+            android:textAllCaps="false"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg4"
+    android:padding="20dp"
+    android:orientation="vertical"
+    tools:context="com.example.forever.tour.ActivityInternal.ActivityViewMoment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="See Moment"
+        style="@style/headingControl" />
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#faba3b"
+        android:layout_marginBottom="10dp"/>
+
+    <ListView
+        android:id="@+id/eventMomentList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/emptyMoment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="(No Moment Found)"
+        android:textSize="22sp"
+        android:textColor="#111976"
+        />
+
+
+</LinearLayout>
