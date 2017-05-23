@@ -16,8 +16,8 @@ This Application is developing for Learning Purpose
 ![Event Details](https://github.com/skshahed/LetsTour/blob/master/screen_shot/event_details.png)
 # Expense Manage With options list view, delete, update:
 ![Expense Add](https://github.com/skshahed/LetsTour/blob/master/screen_shot/add_expense.png)
-# Moment Hitory Storage :
-![Moment Add](https://github.com/skshahed/LetsTour/blob/master/screen_shot/moment_add.png)  
+# Moment History Storage :
+![Moment Add](https://github.com/skshahed/LetsTour/blob/master/screen_shot/moment_add.png) 
 ![Moment Details](https://github.com/skshahed/LetsTour/blob/master/screen_shot/moment_details.png) 
-# Finally Event Details for a Specefic Tour Looks :
-![Final Event](https://github.com/skshahed/LetsTour/blob/master/screen_shot/tour_overall.png)       
+# Finally Event Details for a Specific Tour Looks Like:
+![Final Event](https://github.com/skshahed/LetsTour/blob/master/screen_shot/tour_overall.png)
